@@ -11,9 +11,7 @@
 
 ## 🔗 Live Demo
 
-- **Frontend:** [https://retroleaf.vercel.app](https://retroleaf.vercel.app)
-- **Backend API:** [https://retroleaf-api.onrender.com](https://retroleaf-api.onrender.com)
-
+- **Frontend:** [https://retro-leaf.vercel.app](https://retro-leaf.vercel.app)
 
 ---
 
