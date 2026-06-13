@@ -1,0 +1,72 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-crt-bg text-paper font-body antialiased;
+  }
+
+  ::selection {
+    @apply bg-amber-glow text-ink;
+  }
+
+  /* Custom scrollbar to match retro terminal feel */
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #1b1410;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #4a372a;
+    border-radius: 0;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #d98e04;
+  }
+}
+
+@layer components {
+  /* Reusable retro panel/card */
+  .retro-panel {
+    @apply bg-crt-panel border-2 border-crt-border rounded-sm shadow-retro;
+  }
+
+  /* Retro button base */
+  .retro-btn {
+    @apply inline-flex items-center justify-center gap-2 border-2 border-crt-border bg-amber px-5 py-2 font-display text-ink shadow-retro-sm transition-all duration-150;
+  }
+  .retro-btn:hover {
+    @apply -translate-x-0.5 -translate-y-0.5 shadow-retro;
+  }
+  .retro-btn:active {
+    @apply translate-x-0 translate-y-0 shadow-none;
+  }
+
+  .retro-btn-outline {
+    @apply inline-flex items-center justify-center gap-2 border-2 border-amber bg-transparent px-5 py-2 font-display text-amber transition-all duration-150;
+  }
+  .retro-btn-outline:hover {
+    @apply bg-amber text-ink;
+  }
+
+  /* Retro input field */
+  .retro-input {
+    @apply w-full border-2 border-crt-border bg-crt-bg px-4 py-2 font-body text-paper placeholder-paper/40 outline-none transition-colors duration-150;
+  }
+  .retro-input:focus {
+    @apply border-amber;
+  }
+
+  /* Heading style across the app */
+  .retro-heading {
+    @apply font-display tracking-wide text-amber-glow;
+  }
+
+  /* Scanline overlay effect for hero/signature sections */
+  .crt-overlay::after {
+    content: "";
+    @apply pointer-events-none absolute inset-0 bg-scanlines;
+  }
+}
