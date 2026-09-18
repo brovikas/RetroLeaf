@@ -240,13 +240,6 @@ Retroleaf draws from **typewriters and CRT monitors** — warm amber tones, a da
 
 ---
 
-## Internship Context
-
-> Developed as part of the **CodTech IT Solutions** internship program.
->
-> **Intern:** Vikas Sharma | **ID:** CITS2901 | **Duration:** 4 Weeks
-
----
 
 ---
 
