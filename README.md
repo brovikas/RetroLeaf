@@ -11,7 +11,7 @@
 
 ## 🔗 Live Demo
 
-- **Frontend:** [https://retro-leaf.vercel.app](https://retro-leaf.vercel.app)
+- **Live Site:** [https://retroleafvex.vercel.app](https://retroleafvex.vercel.app)
 
 ---
 
